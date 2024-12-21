@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;net461;net472;net8.0;net9.0</TargetFrameworks>
-    <RootNamespace>Pek.Encryption</RootNamespace>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net8.0;net9.0</TargetFrameworks>
+    <RootNamespace>Pek.BaoTa</RootNamespace>
     <AssemblyTitle>宝塔面板API库</AssemblyTitle>
-    <Description>基于DH框架的加密安全组件。来源于https://github.com/cosmos-stack/cosmos-security</Description>
+    <Description>基于DH框架的宝塔面板API库</Description>
     <Company>湖北登灏科技有限公司</Company>
     <Copyright>©2020-2024 湖北登灏科技有限公司</Copyright>
     <VersionPrefix>4.00</VersionPrefix>
@@ -47,6 +47,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Pek.Common" Version="4.0.2024.1221-beta0959" />
   </ItemGroup>
 
   <ItemGroup>

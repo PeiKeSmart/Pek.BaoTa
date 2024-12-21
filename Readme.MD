@@ -1,3 +1,3 @@
-﻿# Pek.Encryption - 加密安全组件
+﻿# Pek.BaoTa - 宝塔面板API库
 
-基于DH框架的加密安全组件
+宝塔面板API库
