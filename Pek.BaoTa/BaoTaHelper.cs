@@ -104,6 +104,6 @@ public static class BaoTaHelper {
 
         // SSL
         { "getcertlist", "ssl/cert/get_cert_list" },                     // 获取证书列表
-
+        //{ "applycertapi", "acme?action=apply_cert_api" },                     // 申请Let's Encrypt证书
     };
 }
