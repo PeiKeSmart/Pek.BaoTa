@@ -30,7 +30,7 @@ public class BaoTaTests
             .Data("request_token", requestToken)
             .Data("p", 1)
             .Data("limit", 10)
-            .ResultAsync();
+            .ResultStringAsync();
 
         XTrace.WriteLine($"获取到的数据：{responseData}");
 
