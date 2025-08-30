@@ -10,7 +10,7 @@ namespace Pek.BaoTa;
 /// </summary>
 public static class BaoTaHelper {
     /// <summary>
-    /// 签名实现
+    /// Md5实现
     /// </summary>
     /// <param name="input"></param>
     /// <returns></returns>
@@ -29,6 +29,14 @@ public static class BaoTaHelper {
 
         return sb.ToString();
     }
+
+    /// <summary>
+    /// 签名算法
+    /// </summary>
+    /// <param name="requestTime"></param>
+    /// <param name="token"></param>
+    /// <returns></returns>
+    public static String GetSign(Int64 requestTime, String token) => GetMd5Hash(requestTime.ToString() + GetMd5Hash(token));
 
     public static IDictionary<String, String> Urls { get; } = new Dictionary<String, String> {
         // 系统状态相关接口
